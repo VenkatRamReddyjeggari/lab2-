@@ -1,0 +1,40 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Tip Calculator</h1>
+        <form id="tipForm">
+            <!-- Text input for Bill Total -->
+            <div class="input">
+                <label for="billTotal">Bill Total:</label>
+                <input type="text" id="billTotal" placeholder="Enter bill amount">
+            </div>
+            <!-- Range input for Tip Percentage -->
+            <div class="input">
+                <label for="tipPercentage">Tip Percentage:</label>
+                <input type="range" id="tipPercentage" min="0" max="100">
+            </div>
+            <div class="result">
+                <!-- Disabled input to show Tip Percentage -->
+                <p>Tip Percentage: <input type="text" id="tipPercentageValue" disabled></p>
+                <!-- Disabled input to show Tip Amount -->
+                <p>Tip Amount: <input type="text" id="tipAmount" disabled></p>
+                <!-- Disabled input to show Total Bill with Tip -->
+                <p>Total Bill with Tip: <input type="text" id="totalBill" disabled></p>
+            </div>
+        </form>
+    </div> 
+    <!-- Link to external JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
+
